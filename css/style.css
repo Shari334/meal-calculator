@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 0;
+}
+
+header {
+  background-color: #469b6a;
+  width: 100vw;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 10px 6px -6px rgb(26, 25, 25);
+  z-index: 1;
+}
+p {
+  color: white;
+  font-size: 1.2em;
+}
+#calculation-container p {
+  color: #469b6a;
+  font-size: clamp(0.8rem, 1rem, 1.5rem);
+  line-height: 40px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+form {
+  font-size: 1.2em;
+  padding: 20px 0 20px 0;
+}
+#prompt-container {
+  background-color: #52be80;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100vw;
+}
+#calculation-container {
+  width: 60vw;
+  position: relative;
+}
+input {
+  padding: 6px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+#submit {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  background: transparent;
+  border: solid white 2px;
+  color: white;
+}
+.error-message {
+  color: white;
+  background: red;
+}
+h6 {
+  color: grey;
+}
+
+@media screen and (max-width: 400px) {
+  #prompt-container,
+  #calculation-container {
+    zoom: 1;
+    transform: scale(0.8);
+  }
+}

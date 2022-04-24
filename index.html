@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tip Calculator</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Meal Cost Calculator</h1>
+    </header>
+    <div id="prompt-container">
+      <form id="form" action="#" method="GET">
+        <div class="error-message">
+          <p id="text-paragraph"></p>
+        </div>
+        <p>How much was your last meal?</p>
+        <input id="input" type="number" placeholder="ex. $30.59" name="total" />
+        <div class="error-message">
+          <p id="text-paragraph1"></p>
+        </div>
+        <datalist id="percentages">
+          <option value="0.10"></option>
+          <option value="0.15"></option>
+          <option value="0.20"></option>
+        </datalist>
+        <p>What was the tip percentage?</p>
+        <input
+          list="percentages"
+          id="input-tip"
+          type="number"
+          placeholder="ex. 0.15 = 15%"
+          name="tip"
+        />
+        <div class="error-message">
+          <p id="text-paragraph2"></p>
+        </div>
+        <p>How many people ate?</p>
+        <input
+          id="input-eat"
+          type="number"
+          min="1"
+          placeholder="minimum = 1 person"
+          name="eaters"
+        />
+      </form>
+      <button id="submit" type="submit">Calculate</button>
+    </div>
+    <div id="calculation-container"></div>
+    <script src="js/app.js"></script>
+    <footer><h6>Designed and Developed by Ashari Elliott 2021</h6></footer>
+  </body>
+</html>
